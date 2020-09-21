@@ -1,0 +1,15 @@
+git config --global user.name "sldkfjw"
+
+C:\Program Files (x86)\Java\jdk1.8.0_261
+
+javac -version
+java -version
+(versions need to be 8)
+
+javac JavaProgramName.java (creates a class in the same folder of same name)
+java JavaProgramName (which is now running the class)
+
+javac -d . HelloWorld.java
+java hellopack.HelloWorld
+(had to write "package helloworld;" on top of notepad doc)
+
