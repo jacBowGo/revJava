@@ -1,0 +1,21 @@
+package operators_demo;
+
+public class ArithmeticOpsDemo {
+	
+	/*
+	 * +
+	 * -
+	 * *
+	 *  //
+	 * %
+	 * 
+	 * ++
+	 * --
+	 */
+			
+
+	public static void main(String[] args) {
+		
+	}
+	
+}

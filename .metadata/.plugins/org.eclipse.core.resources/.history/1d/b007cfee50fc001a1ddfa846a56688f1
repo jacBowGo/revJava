@@ -1,0 +1,17 @@
+package type_casting_example;
+
+public class TypeCastingDemo {
+
+	public static void main(String[] args) {
+		
+		/*
+		 * TypeCasting: Conversion of 1 data type to another
+		 * 
+		 * 1) Implicit Casting (taken care by compiler itself) - when we assign smaller data type to larger data type
+		 * 		Please note that all the number family like (int, short, long, & byte) are considered as smaller than float and double
+		 * 
+		 */
+		
+	}
+	
+}

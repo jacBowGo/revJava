@@ -1,0 +1,25 @@
+package relational_ops;
+
+public class RelationalOpsDemo {
+
+	/*
+	 * ==
+	 * !=
+	 * >
+	 * <
+	 * >=
+	 * <=
+	 */
+	
+	public static void main(String[] args) {
+		
+		
+		
+	}
+	
+	int x = 6;
+	int y = 9;
+	
+	public void equals() {}
+	
+}

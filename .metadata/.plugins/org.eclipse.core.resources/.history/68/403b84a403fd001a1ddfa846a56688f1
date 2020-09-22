@@ -1,0 +1,29 @@
+package operators_demo;
+
+public class ArithmeticOpsDemo {
+	
+	/*
+	 * +
+	 * -
+	 * *
+	 *  //
+	 * %
+	 * 
+	 * ++
+	 * --
+	 */
+			
+
+	public static void main(String[] args) {
+		
+	}
+	
+	
+	public void add() {
+		int x = 4;
+		int y = 5;
+		a = x + y;
+		System.out.println("Adding " x " & " y " = " + a);
+	}
+	
+}

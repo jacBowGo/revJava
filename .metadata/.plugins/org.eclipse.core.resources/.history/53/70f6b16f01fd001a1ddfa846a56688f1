@@ -1,0 +1,17 @@
+package bitwise_ops;
+
+public class BitwiseOpsDemo {
+	
+	/*
+	 * https://www.w3schools.com/java/java_operators.asp
+	 * 
+	 * &
+	 * | bitwise inclusive OR
+	 * ~ bitwise complement
+	 * ^ bitwise exclusive OR
+	 * << left shift
+	 * >> right shift
+	 * >>> unsigned right shift
+	 */
+
+}

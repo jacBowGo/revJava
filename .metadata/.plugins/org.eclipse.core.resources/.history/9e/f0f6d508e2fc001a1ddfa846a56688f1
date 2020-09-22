@@ -1,0 +1,25 @@
+package eg1;
+
+public class Demo1 {
+	
+	//can put main and other methods anywhere in the doc, doesn't matter order
+	public void helloNonStaticAgain() {
+		System.out.println("Hello again from nonstatic");
+		
+	}
+
+	public static void main(String[] args) {
+		
+		// Classname obj = new Constructor();
+		Demo1 d = new Demo1(); //dynamic memory allocation is happening in the heap
+		d.helloNonStatic(); //execution //with the help of the object "d" we'll be able to reference anything in the class
+		d.helloNonStaticAgain();
+		
+	}
+	
+	public void helloNonStatic() {
+		System.out.println("Hellow from non static block");
+		
+	}
+
+}

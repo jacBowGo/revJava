@@ -1,0 +1,17 @@
+package bitwise_ops;
+
+public class BitwiseOpsDemo {
+	
+	/*
+	 * https://www.w3schools.com/java/java_operators.asp
+	 * 
+	 * &
+	 * |
+	 * ~
+	 * ^
+	 * <<
+	 * >>
+	 * >>>
+	 */
+
+}

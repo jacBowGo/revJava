@@ -1,0 +1,18 @@
+package eg1;
+
+public class Calculator {
+	
+	//treat entire java file like one project, so one file should only have one main
+
+	public static void main(String[] args) {}
+	
+	public static void calculatorStatic() {
+		System.out.println("Hello from Calculator's class calculatorStatic()");
+		
+	}
+	
+	public void calculatorNonStatic() {
+		System.out.println("Hello from Calculator's class non-static");
+		
+	}
+}

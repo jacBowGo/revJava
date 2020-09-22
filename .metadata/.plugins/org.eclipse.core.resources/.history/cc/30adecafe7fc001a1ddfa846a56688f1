@@ -1,0 +1,55 @@
+package eg1;
+
+//had to type "Animal" and ctrl space and it'll import 2nd package
+import eg2.Animal;
+
+public class Demo1 {
+	
+	//can put main and other methods anywhere in the doc, doesn't matter order
+	public void helloNonStaticAgain() {
+		System.out.println("Hello again from nonstatic");
+		
+	}
+
+	//main will always be public static void
+	public static void main(String[] args) {
+		
+		// Classname obj = new Constructor();
+		Demo1 d = new Demo1(); //dynamic memory allocation is happening in the heap
+		d.helloNonStatic(); //execution //with the help of the object "d" we'll be able to reference anything in the class
+		d.helloNonStaticAgain();
+		helloStatic(); //don't need an object to help extract it because it's in a static
+		
+		//Classname.methodName()
+		Calculator.calculatorStatic(); //static method of different class
+	
+		Calculator c = new Calculator();
+		c.calculatorNonStatic();
+		int res = c.add(100,299);
+		System.out.println("result is " + res);
+		
+		//had to type "Animal" and ctrl space and it'll import 2nd package
+		Animal.helloAnimalStatic();
+		Animal a = new Animal();
+		a.helloAnimalNonStatic();
+	}
+	
+	public void helloNonStatic() {
+		System.out.println("Hellow from non static block");
+		
+	}
+	
+	public static void helloStatic() {
+		System.out.println("Hello from helloStatic() method");
+		
+	}
+
+	//all the classes which falls under java.lang package will be 
+	//imported directly... like eg: String, System
+	
+}
+
+//easier to make one static connection and open it for many users, versus opening many static connections, one for each user
+//e.g. if have program for playing jackblack, you have many classes that do different functions that involve a deck of cards, you would only have one static class for a deck of cards, instead of making a deck of cards for each of the class functions
+//statics fill up your memory
+

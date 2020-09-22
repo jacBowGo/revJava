@@ -1,0 +1,13 @@
+package data_types_demo;
+
+public class Demo1 {
+
+	public static void main(String[] args) {
+		/*
+		 * Data type - where you are asking java to allocate some memory for you to hold some values within it
+		 * 
+		 * Java provids 8 primitive data types with default values to it...
+		 */
+		
+	}
+}
