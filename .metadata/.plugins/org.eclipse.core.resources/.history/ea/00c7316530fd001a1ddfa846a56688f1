@@ -1,0 +1,10 @@
+package conditional_ops;
+
+public class ConditionalOpsDemo {
+
+	/*
+	 * Ternary Operator
+	 * ?:
+	 * 
+	 */
+}

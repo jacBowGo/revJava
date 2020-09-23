@@ -1,0 +1,42 @@
+package logical_ops;
+
+public class LogicalOpsDemo {
+	
+	/*
+	 * 
+	 * && AND
+	 * || OR
+	 * 
+	 */
+	
+	public static void main(String[] args) {
+		
+		LogicalOpsDemo logic = new LogicalOpsDemo();
+		logic.and();
+		logic.or();
+		
+	}
+	
+	boolean x = true;
+	boolean y = true;
+	
+	public void and() {
+		
+		if (x && y) {
+			System.out.println("Both are true");
+		} else {
+			System.out.println("One or both of them are false");
+		}
+		
+	}
+	
+	public void or() {
+		
+		if (x || y) {
+			System.out.println("One or both of them are true");
+		} else {
+			System.out.println("Neither are true");
+		}
+	}
+
+}

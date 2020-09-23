@@ -1,0 +1,19 @@
+package conditional_ops;
+
+public class ConditionalOpsDemo {
+
+	/*
+	 * Ternary Operator
+	 * The ternary operator is named so because it has three operands. 
+	 * It takes in a comparison and will return a specified value if the comparison evaluates to true or 
+	 * another value if it evaluates to false.
+	 * 
+	 * If is equivalent to the phrase, "If this, return this, otherwise return that".
+	 * 
+	 * comparison_statement ? value to return if true : value to return if false;
+
+	 * 
+	 * ?:
+	 * 
+	 */
+}

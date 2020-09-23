@@ -1,0 +1,31 @@
+package conditional_ops;
+
+public class ConditionalOpsDemo {
+
+	/*
+	 * Ternary Operator
+	 * The ternary operator is named so because it has three operands. 
+	 * It takes in a comparison and will return a specified value if the comparison evaluates to true or 
+	 * another value if it evaluates to false.
+	 * 
+	 * If is equivalent to the phrase, "If this, return this, otherwise return that".
+	 * 
+	 * comparison_statement ? value to return if true : value to return if false;
+	 * 
+	 * ?:
+	 * 
+	 */
+	
+	public static void main(String[] args) {
+		
+		ConditionalOpsDemo ternary = new ConditionalOpsDemo();
+		ternary.compare();
+		System.out.println(a);
+		
+	}
+	
+	public int compare() {
+		int a = 5 < 3 ? 20:8;
+		return a;
+	}
+}
