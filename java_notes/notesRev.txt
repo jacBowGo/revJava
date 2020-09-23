@@ -2,6 +2,12 @@ git config --global user.name "sldkfjw"
 
 C:\Program Files (x86)\Java\jdk1.8.0_261
 
+MySQL Terminal Command
+\usr\local\mysql\bin\mysql -u root -p
+
+
+To Run Java File
+
 javac -version
 java -version
 (versions need to be 8)
@@ -12,4 +18,158 @@ java JavaProgramName (which is now running the class)
 javac -d . HelloWorld.java
 java hellopack.HelloWorld
 (had to write "package helloworld;" on top of notepad doc)
+
+
+git config --global user.name "jacBowGo"
+git config --global user.email "jacbowgo@gmail.com"
+git init
+git remote add origin [link of my repository]
+git remote add origin https://github.com/jacBowGo/revJava.git
+git remote -v
+git add .
+git commit -m "a message you wanna write"
+git push -u origin master
+(refresh GitHub browser page)
+
+Ctrl C (if have error and need to start all over)
+Warning: copy and pasting quotes might not transfer onto terminal as same symbol, need to type them into terminal yourself
+
+git clone https://github.com/vinayingalahalli/rocp1_revature.git
+(this clones teacher's files onto your github)
+
+git pull (my repository)
+
+To upload things onto git:
+git add
+git commit
+git push
+
+git status -uno (check if repo has been updated)
+
+-------
+
+
+Heap
+-- secondary memory
+-- storage happens
+-- objects
+-- non-static stuff (**only after object creation is done)
+
+Stack
+-- primary memory
+-- execution happens
+-- accessed quickly
+-- java interpreter
+-- static (can be accessed without making an object)
+
+
+1st Rule of OOP - OOAD
+---------
+anything and everything should and must be accessed only and only with help of objects
+
+
+
+------
+
+OperatorsDemo
+separate package for diff operators
+example to demonstrate those operators
+
+Operators
+-- Arithmetic
+-- Relational
+-- Logical Operators
+-- Bitwise Operators
+-- Conditional Operators
+
+projectname: operators_demo
+package:
+1) arithmetic_ops
+	ArithmeticOpsDemo
+2) relational_ops
+	RelationalOpsDemo
+
+Logical
+* && AND
+	 * || OR
+	 * ! Reverse
+
+
+Conditional
+	 * Ternary Operator
+	 * The ternary operator is named so because it has three operands. 
+	 * It takes in a comparison and will return a specified value if the comparison evaluates to true or 
+	 * another value if it evaluates to false.
+	 * 
+	 * If is equivalent to the phrase, "If this, return this, otherwise return that".
+	 * 
+	 * comparison_statement ? value to return if true : value to return if false;
+	 * 
+	 * ?:
+
+
+
+Bitwise
+&
+		 * This compares the digits of the binary version of each number and if both digits are '1' it comes out as true.
+		 * True = 1
+		 * False = 0
+		 * The resulting true and falses will create a new binary number, which will be converted back into a base 10 number.& bitwise AND
+	 * | bitwise OR
+	 * ^ bitwise XOR
+	 * 
+	 * 
+	 * bitwise AND (&), bitwise exclusive OR (^), and bitwise inclusive OR (|)
+	 * 
+	 * need to understand gates
+	 * 
+	 * https://www.w3schools.com/java/java_operators.asp
+	 * 
+	 * &
+	 * | bitwise inclusive OR
+	 * ~ bitwise complement
+	 * ^ bitwise exclusive OR
+	 * << left shift
+	 * 			Zero-fill left shift - Shift left by pushing zeroes in from the right and letting the leftmost bits fall off
+	 * >> right shift
+	 * 			Signed right shift - Shift right by pushing copies of the leftmost bit in from the left and 
+	 * 			letting the rightmost bits fall off
+	 * >>> unsigned right shift
+	 * 			Zero-fill right shift - Shift right by pushing zeroes in from the left and letting the rightmost bits fall off
+	 * 
+	 * https://www.geeksforgeeks.org/operators-in-java/#Bitwise%20Operators
+	 * Bitwise Operators : These operators are used to perform manipulation of individual bits of a number. 
+	 * 					   They can be used with any of the integer types. 
+	 * 					   They are used when performing update and query operations of Binary indexed tree.
+	 *	&, Bitwise AND operator: returns bit by bit AND of input values.
+	 * 	|, Bitwise OR operator: returns bit by bit OR of input values.
+	 *	^, Bitwise XOR operator: returns bit by bit XOR of input values.
+	 *	~, Bitwise Complement Operator: This is a unary operator which returns the one’s compliment representation of the input value, 
+	 *									i.e. with all bits inversed.
+	 *
+	 * 101 011 = false false true = 001
+	 * 5&3 = 001 = 1
+	 * 
+	 * 101 011 = true true true = 111 = 7
+	 * 5|3 = 7
+	 * 
+	 * 0000 0101 = 1111 1010 = -6 by two's complement
+	 * ~5 = 2
+	 * 
+	 * 101 011 = true true false = 110 = 2
+	 * 5^3 = 2
+	 * 
+	 * 
+	 * 5<<1 = 0101 = 1010 = 10
+	 * 
+	 * 5<<2 = 0101 = 0001 0100 = 20
+	 * 
+	 * 5>>1 = 0101 = 1010 = 10 ??
+	 * 
+	 * 5>>>1 = 0101 = 0010 = 2
+	 * 
+	 * don't get the last two difference
+	 * 
+	 * functions on the bit by bit level
+
 
