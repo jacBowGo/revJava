@@ -3,16 +3,8 @@ package operators_demo;
 public class ArithmeticOpsDemo {
 	
 	/*
-	 * +
-	 * -
-	 * *
-	 *  //
-	 * %
-	 * 
-	 * ++
-	 * --
+	 * Practice with arithmetic operators
 	 */
-			
 
 	public static void main(String[] args) {
 		ArithmeticOpsDemo calc = new ArithmeticOpsDemo();

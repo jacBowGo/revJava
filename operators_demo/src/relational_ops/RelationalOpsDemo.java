@@ -3,16 +3,10 @@ package relational_ops;
 public class RelationalOpsDemo {
 
 	/*
-	 * ==
-	 * !=
-	 * >
-	 * <
-	 * >=
-	 * <=
+	 * Practice with relational operators
 	 */
 	
 	public static void main(String[] args) {
-		
 		RelationalOpsDemo relate = new RelationalOpsDemo();
 		relate.equals();
 		relate.doesntEqual();
@@ -20,14 +14,12 @@ public class RelationalOpsDemo {
 		relate.less();
 		relate.greaterOrEqual();
 		relate.lessOrEqual();
-		
 	}
 	
 	int x = 6;
 	int y = 9;
 	
 	public void equals() {
-		
 		if (x == y) {
 			System.out.println( x + " equals " + y);
 		} else {
@@ -36,7 +28,6 @@ public class RelationalOpsDemo {
 	}
 	
 	public void doesntEqual() {
-		
 		if (x != y) {
 			System.out.println( x + " does not equal " + y);
 		} else {
@@ -45,7 +36,6 @@ public class RelationalOpsDemo {
 	}
 	
 	public void greater() {
-		
 		if (x > y) {
 			System.out.println( x + " is greater than " + y);
 		} else {
@@ -54,7 +44,6 @@ public class RelationalOpsDemo {
 	}
 	
 	public void less() {
-		
 		if (x < y) {
 			System.out.println( x + " is less than " + y);
 		} else {
@@ -63,7 +52,6 @@ public class RelationalOpsDemo {
 	}
 	
 	public void greaterOrEqual() {
-		
 		if (x >= y) {
 			System.out.println( x + " is greater than or equal to " + y);
 		} else {
@@ -72,7 +60,6 @@ public class RelationalOpsDemo {
 	}
 	
 	public void lessOrEqual() {
-		
 		if (x <= y) {
 			System.out.println( x + " is less than or equal to " + y);
 		} else {
