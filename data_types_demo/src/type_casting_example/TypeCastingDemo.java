@@ -31,6 +31,7 @@ public class TypeCastingDemo {
 		System.out.println("value of y = " + y);
 		//prints out the ASCII value of the letter 'A'
 		
+		
 		// 2)
 		
 		y = 100; //4bytes
@@ -40,6 +41,8 @@ public class TypeCastingDemo {
 		float f = 99.88f;
 		int z = (int)f;
 		System.out.println("value of z = " + z);
+		
+		
 	
 	}
 	

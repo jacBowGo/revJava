@@ -1,0 +1,116 @@
+package array_pract;
+
+import java.util.Arrays; //ctrl spaced after typing "Arrays" to get the import
+
+public class EvenOddsPrime {
+
+	public static void main(String[] args) {
+		
+//		Arrays
+//		Arrays.toString(arrayName);
+//		Arrays.sort();
+//		Arrays.copyOf();
+		
+		//even, odds, prime, palendrome
+		
+		//linear search
+		//binary search
+		
+		
+		
+		
+		EvenOddsPrime p = new EvenOddsPrime();
+		
+		p.setArray();
+		//System.out.println(Arrays.toString(ar1));
+		System.out.println(" ");
+		p.evenArray();
+		System.out.println(" ");
+		p.oddArray();
+		System.out.println(" ");
+		p.primeArray();
+	
+
+		
+		
+	}
+	
+	int[] ar1 = new int[50];
+	//int[] ar2 = new int[ar1.length];
+	String[] ar2 = {"anna", "happy", "bus", "racecar", "peace", "noon"};
+	int[] ar3 = {33, 4, 6, 23, 43, 100, 56, 7, 9};
+	
+	
+	public void setArray() {
+		
+		
+		for (int i = 0; i < ar1.length; i++) {
+			ar1[i] = i+1;
+			System.out.print(ar1[i] + " ");
+		}
+		
+//		for (int i = 0; i < ar1.length; i++) {
+//			//ar1[i] = i+1;
+//			System.out.println(ar1[i] + " ");
+//		}
+		
+	}
+	
+	public void evenArray() {
+		
+		for (int i = 0; i < ar1.length; i++) {
+			if (ar1[i] % 2 == 0) {
+				System.out.print(ar1[i] + " ");
+			}
+			
+		}
+		
+	}
+		
+	public void oddArray() {
+			
+		for (int i = 0; i < ar1.length; i++) {
+			if (ar1[i] % 2 != 0) {
+				System.out.print(ar1[i] + " ");
+			}
+				
+		}
+		
+	}
+	
+	public void primeArray() {
+		
+		int arr[] = ar1;
+		boolean prime = true;
+		
+		for (int i = 0; i < arr.length; i++) {
+			for (int j = 2; j <= arr[i]/2; j++) {
+				if (arr[i] % j == 0) {
+					//System.out.print(arr[i] + " ");
+					System.out.print(arr[i] + " passed ");
+					prime = false;
+					break;
+				}
+				if (prime) {
+					System.out.print(arr[i] + " ");
+					break;
+				}
+			}	
+		}
+		
+		
+		
+	}
+	
+	public void palenArray() {
+		
+		// length of string
+		// first and last, minus at ends by one
+		
+	}
+		
+		
+	
+	
+	
+}

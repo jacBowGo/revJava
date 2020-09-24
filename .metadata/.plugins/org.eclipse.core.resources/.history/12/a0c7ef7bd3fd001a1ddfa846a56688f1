@@ -1,0 +1,21 @@
+package constructor_demo;
+
+public class ProductMain {
+
+	public static void main(String[] args) {
+		
+		Product prod = new Product(12, "Camera", 5);
+		//System.out.println(prod);
+		System.out.println(prod.toString());
+		//System.out.println(prod.hashCode());
+		
+		Product prod1 = new Product(12, "Dog Leash", 5);
+		System.out.println(prod1);
+		System.out.println(prod1.toString());
+		System.out.println(prod1.hashCode());
+		
+	}
+	
+}
+
+//(int id, String name, int rating, double cost)

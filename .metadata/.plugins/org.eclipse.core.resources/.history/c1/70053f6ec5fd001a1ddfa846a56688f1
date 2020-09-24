@@ -1,0 +1,18 @@
+package array_pract;
+
+import java.util.Arrays; //ctrl spaced after typing "Arrays" to get the import
+
+public class EvenOddsPrime {
+
+	public static void main(String[] args) {
+		
+		Arrays
+		Arrays.toString(arrayName);
+		Arrays.sort();
+		Arrays.copyOf();
+		
+	}
+	
+	
+	
+}

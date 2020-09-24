@@ -1,0 +1,158 @@
+package array_pract;
+
+import java.util.Arrays; //ctrl spaced after typing "Arrays" to get the import
+
+public class EvenOddsPrime {
+
+	public static void main(String[] args) {
+		
+//		Arrays
+//		Arrays.toString(arrayName);
+//		Arrays.sort();
+//		Arrays.copyOf();
+		
+		//even, odds, prime, palendrome
+		
+		//linear search
+		//binary search
+		
+		
+		
+		
+		EvenOddsPrime p = new EvenOddsPrime();
+		
+//		p.setArray();
+		//System.out.println(Arrays.toString(ar1));
+		System.out.println(" ");
+		//p.evenArray();
+		System.out.println(" ");
+		//p.oddArray();
+//		System.out.println(" ");
+//		p.primeArray();
+		System.out.println(" ");
+		p.palinArray();
+
+		
+		
+	}
+	
+	int[] ar1 = new int[50];
+	//int[] ar2 = new int[ar1.length];
+	String[] ar2 = {"anna", "happy", "bus", "racecar", "peace", "noon"};
+	int[] ar3 = {33, 4, 6, 23, 43, 100, 56, 7, 9};
+	
+	
+	public void setArray() {
+		
+		
+		for (int i = 0; i < ar1.length; i++) {
+			ar1[i] = i+1;
+			System.out.print(ar1[i] + " ");
+		}
+		
+//		for (int i = 0; i < ar1.length; i++) {
+//			//ar1[i] = i+1;
+//			System.out.println(ar1[i] + " ");
+//		}
+		
+	}
+	
+	public void evenArray() {
+		
+		for (int i = 0; i < ar1.length; i++) {
+			if (ar1[i] % 2 == 0) {
+				System.out.print(ar1[i] + " ");
+			}
+			
+		}
+		
+	}
+		
+	public void oddArray() {
+			
+		for (int i = 0; i < ar1.length; i++) {
+			if (ar1[i] % 2 != 0) {
+				System.out.print(ar1[i] + " ");
+			}
+				
+		}
+		
+	}
+	
+	public void primeArray() {
+		
+		int arr[] = ar1;
+		
+		for (int i = 0; i < arr.length; i++) {
+			
+			boolean prime = true;
+			
+			if (arr[i] == 1) prime = false;
+			else {
+				for (int j = 2; j <= arr[i] / 2; j++) {
+					if (arr[i] % j == 0) {
+						prime = false;
+						break;
+					}
+				}	
+			}
+			if (prime) System.out.print(arr[i] + " ");
+		
+		}
+		
+		
+		
+	}
+	
+	public void palinArray() {
+		
+		// length of string
+		// first and last, minus at ends by one
+		
+		
+		//String word = "hello";
+		//System.out.println(word.charAt(0));
+		
+		
+		
+		String strArr[] = ar2;
+		int palinCounter = 0;
+		
+		System.out.println(strArr[0]);
+		
+		for (int i = 0; i < strArr.length; i++) {
+			
+			String word = strArr[i];
+			int counter = 0;
+			
+			for (int j = 0, k = word.length(); j <= word.length()/2; j++, k--) {
+				System.out.println(j);
+				System.out.println(word.length());
+			if (word.charAt(j) != word.charAt(k)) break;
+//			else if (word.charAt(j) == word.charAt(k)) {
+//				
+//			}
+			else {
+				counter++;
+			}
+			
+				
+			}
+			if (counter > 0) {
+				System.out.println(strArr[i] + " is a palindrome");
+				palinCounter++;
+			}
+		}
+		
+		System.out.println("There are " + palinCounter + " palindromes in this array.");
+		
+		
+		
+		
+	}
+		
+		
+	
+	
+	
+}

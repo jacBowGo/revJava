@@ -1,0 +1,27 @@
+package constructor_demo;
+
+public class Product {
+
+	public static void main(String[] args) {
+		
+	}
+	
+	int id;
+	String name;
+	int rating;
+	double cost;
+	
+	
+	public ConstructorPractice(int id, String name, int rating) {
+		// super();
+		this.id = id;
+		this.name = name;
+		this.rating = rating;
+	}
+	
+	
+	
+	
+}
+
+//Mimic the same example replace Employee with Product(id,name,rating,cost)

@@ -1,0 +1,50 @@
+package array_pract;
+
+import java.util.Arrays; //ctrl spaced after typing "Arrays" to get the import
+
+public class EvenOddsPrime {
+
+	public static void main(String[] args) {
+		
+//		Arrays
+//		Arrays.toString(arrayName);
+//		Arrays.sort();
+//		Arrays.copyOf();
+		
+		//even, odds, prime, palendrome
+		
+		//linear search
+		//binary search
+		
+		EvenOddsPrime p = new EvenOddsPrime();
+		
+		p.setArray();
+		
+		
+	}
+	
+	public void evenArray() {
+		
+		
+	}
+	
+	public void setArray() {
+		
+		int[] ar1 = new int[50];
+		
+//		for (int i = 0; i < ar1.length; i++) {
+//			ar1[i] = i+1;
+//			System.out.println(ar1[i] + " ");
+//		}
+		
+		for (int i = 0; i < ar1.length; i++) {
+			ar1[i] = i+1;
+			System.out.println(ar1[i] + " ");
+		}
+		
+	}
+	
+	
+	
+	
+}
