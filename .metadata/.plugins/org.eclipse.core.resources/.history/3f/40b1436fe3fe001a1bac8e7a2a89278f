@@ -1,0 +1,23 @@
+package eg;
+
+public class FloatLongDouble {
+
+	public static void main(String[] args) {
+		
+		// Float, Long and Double classes respectively
+
+
+		Integer i5=77;
+		Float f=i5.floatValue(); //doubleValue() //shortValue() //longValue()
+		System.out.println("f = "+f);
+		int r=f.intValue();
+		System.out.println("r : "+r);
+		
+//		Float f1 = 44;
+//		
+//		Long L1 = 20937;
+//		
+//		Double d1 = 239.23;
+	}
+	
+}
