@@ -1,0 +1,75 @@
+package com.jdbc.hello;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+
+public class HelloJdbc {
+
+	public static void main(String[] args) {
+		
+		Connection connection = null;
+		try {
+			// Step 1: Load Driver
+			Class.forName("com.mysql.cj.jdbc.Driver");
+			System.out.println("Driver Loaded Successfully");
+			
+			// Step 2: Open Connection(url,username,password)
+			String url = "jdbc:mysql://localhost:3306/rocp-1";
+			String username = "root";
+			String password = "treeCloShh12";
+			connection = DriverManager.getConnection(url, username, password);
+			System.out.println("Connection Successful");
+			
+			// Step 3: Create Statement
+			Statement statement = connection.createStatement();
+			// String sql = "SELECT id, name, age, teamName, gender, city FROM player";
+			System.out.println("Statement Created");
+			
+			// Step 4: Execute Query
+			// ResultSet resultSet = statement.executeQuery(sql);
+			// executeUpdate
+			statement.executeUpdate("INSERT INTO player (id, name, age, city, gender, teamName) VALUES (113, 'Bonnie Fellow', 25, 'Little Rock', 'f', 'Rollers')");
+			statement.executeUpdate("INSERT INTO player (id, name, age, city, gender, teamName) VALUES (111, 'Herry Bittle', 24, 'Green Bay', 'f', 'Packers')");
+			System.out.println("Query Executed");
+			
+			// Step 5: Process Results
+			
+//			while(resultSet.next()) {
+//				System.out.print("Id: " + resultSet.getInt("id"));
+//				System.out.print(" Name: " + resultSet.getString("name")); // varchar is String in java
+//				System.out.print(" Age: " + resultSet.getInt("age"));
+//				System.out.print(" Gender: " + resultSet.getString("gender"));
+//				System.out.print(" City: " + resultSet.getString("city"));
+//				System.out.println(" TeamName: " + resultSet.getString("teamName"));
+//			}
+			
+			System.out.println("Results Processed");
+			
+		} catch (ClassNotFoundException e) {
+			System.out.println(e);
+		} catch (SQLException e) {
+			System.out.println(e);
+		} finally {
+			try {
+				// Step 6: Close Connection
+				connection.close();
+				System.out.println("Connection Closed");
+			} catch (SQLException e) {
+				System.out.println(e);
+			}
+		}
+
+	}
+
+}
+
+// Recreate the same and try doing Insert to the player table using Statement object only
+// do insert query
+// don't use provide statement
+// won't be while loop
+// DML
+// execute update, execute query
+// time stamp 1:50:09
