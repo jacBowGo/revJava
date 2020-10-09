@@ -1,0 +1,36 @@
+package com.app.main;
+
+import java.util.List;
+
+import com.app.dao.PlayerDAO;
+import com.app.dao.impl.PlayerDAOImpl;
+import com.app.model.Player;
+
+public class PlayerMain {
+
+	public static void main(String[] args) {
+		
+		PlayerDAO dao = new PlayerDAOImpl();
+		Player player = new Player(120, "Dobbie", 24, "Blitzes", "m", "Beverly Hills");
+		
+		int c = dao.createPlayer(player);
+		
+		if (c == 1) {
+			System.out.println("Player registered with below details");
+			System.out.println(player);
+		} else {
+			System.out.println("Failed registration");
+		}
+		
+		dao.updatePlayer(104, "Boulder");
+		dao.deletePlayer(107);
+		
+		List<Player> playersList = dao.getAllPlayers();
+		System.out.println("\n\nThere are " + playersList.size() + " no. of players reigstered with us.. below are the details");
+		
+		for (Player p:playersList) {
+			System.out.println(p);
+		}
+	}
+
+}
