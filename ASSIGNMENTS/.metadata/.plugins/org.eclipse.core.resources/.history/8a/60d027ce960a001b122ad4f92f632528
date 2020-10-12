@@ -1,0 +1,5 @@
+package com.app.customer.dao.impl;
+
+public class CustomerDAOImpl {
+
+}

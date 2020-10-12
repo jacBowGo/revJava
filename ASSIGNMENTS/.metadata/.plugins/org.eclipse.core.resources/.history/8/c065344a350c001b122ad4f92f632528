@@ -1,0 +1,5 @@
+package com.app.login.exception;
+
+public class BusinessException extends Exception {
+
+}

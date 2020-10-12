@@ -1,0 +1,8 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.app.customer</groupId>
+  <artifactId>customer_crud_maven_console_app_mine</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <name>customer_crud_maven_console_app_mine</name>
+  <description>CRUD app for Customer DB using Jdbc and Maven</description>
+</project>

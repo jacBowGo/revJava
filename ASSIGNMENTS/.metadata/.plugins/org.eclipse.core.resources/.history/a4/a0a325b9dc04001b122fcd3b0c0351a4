@@ -1,0 +1,17 @@
+package com.jdbc.hello;
+
+public class HelloJdbc {
+
+	public static void main(String[] args) {
+		
+		try {
+			//Step 1: Load Driver
+			Class.forName("com.mysql.cj.jdbc.Driver");
+			System.out.println("Driver Loaded Succesfully");
+		} catch (ClassNotFoundException e) {
+			System.out.println(e);
+		}
+
+	}
+
+}

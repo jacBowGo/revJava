@@ -1,0 +1,12 @@
+INDEX VERSION 1.3+C:\Users\jac.bow\workspace\ASSIGNMENTS\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+2750025551.index
+3979723815.index
+2321276.index
+3731839371.index
+3139043454.index
+2441809755.index
+378622879.index
+3346791752.index
+208726458.index
+171489639.index
+3947488090.index

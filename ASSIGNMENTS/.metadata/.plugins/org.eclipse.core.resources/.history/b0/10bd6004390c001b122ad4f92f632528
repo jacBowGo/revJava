@@ -1,0 +1,27 @@
+package com.app.login.dao.impl;
+
+import java.sql.Connection;
+import java.sql.SQLException;
+
+import com.app.login.dao.LoginDAO;
+import com.app.login.dao.dbutil.MySqlConnection;
+import com.app.login.exception.BusinessException;
+import com.app.login.model.User;
+
+public class LoginDAOImpl implements LoginDAO {
+
+	@Override
+	public boolean isValidUserCredentials(User user) throws BusinessException {
+		boolean b = false;
+		
+		try (Connection connection = MySqlConnection.getConnection()) {
+			
+		} catch (ClassNotFoundException | SQLException e) {
+			System.out.println(e); //this line you should take ff before going live (production)
+			throw new BusinessException("Internal error occurred... Please contact the master")
+		}
+		
+		return b;
+	}
+
+}

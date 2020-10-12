@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="ISO-8859-1">
+		<title>Servlet Demo</title>
+	</head>
+	
+	<body>
+		<form action = "hi">
+			Enter Name <input type = "text" name = "fname">
+			<input type = "submit" value = "Click here for the doGet()">
+		</form>
+	
+	<br/>
+	<br/>
+	<br/>
+	
+		<form action = "hi" method = "post">
+			Enter First Name <input type = "text" name = "fname">
+			<br/>
+			Enter Last Name <input type = "text" name = "Lname"><br/>
+			Enter Password <input type = "password" name = "password"><br/>
+			Enter Email <input type = "email" name = "email">
+			<br/>
+			Gender <input type = "radio" name = "gender" variable = "Female"> F &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+			<input type = "radio" name = "gender" variable = "Male"> M &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+			<input type = "radio" name = "gender" variable = "Others"> O &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+			<br/>
+			Country <select name = "country">
+			<option value = "Colombia">Colombia</option>
+			<option value = "USA">USA</option>
+			<option value = "Lebanon">Lebanon</option>
+			<option value = "Other">Other</option>
+			</select>
+			<br/>
+			Select Hobbies
+			<input type = "checkbox" name = "hobby" value = "Gaming">Gaming<br/>
+			<input type = "checkbox" name = "hobby" value = "Reading Books">Reading Books<br/>
+			<input type = "checkbox" name = "hobby" value = "Sports">Sports<br/>
+			<br/>
+			<input type = "submit" value = "Click here for the doPost()">
+		</form>
+	
+	</body>
+
+</html>

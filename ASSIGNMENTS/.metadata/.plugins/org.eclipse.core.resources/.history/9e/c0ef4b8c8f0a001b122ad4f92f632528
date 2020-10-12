@@ -1,0 +1,72 @@
+package com.app.customer.main;
+
+import java.util.Scanner;
+
+public class CustomerMain {
+
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		int ch = 0;
+		
+		System.out.println("Welcome to Customer App V1.0");
+		System.out.println("-----------");
+		do {
+			System.out.println("Menu");
+			System.out.println("====");
+			System.out.println("1) Add Customer");
+			System.out.println("2) Update Customer");
+			System.out.println("3) Delete Customer");
+			System.out.println("4) Search Customers By Id");
+			System.out.println("5) Search Customers By Name");
+			System.out.println("6) Search Customers By Age");
+			System.out.println("7) Search Customers By Contact");
+			System.out.println("8) Search Customers By City");
+			System.out.println("9) Search Customers By Gender");
+			System.out.println("10) EXIT");
+			try {
+			ch = Integer.parseInt(sc.nextLine());
+			} catch (NumberFormatException e) {
+				
+			}
+			switch (ch) {
+			case 1:
+				System.out.println("This is still under construction");
+				break;
+			case 2:
+				System.out.println("This is still under construction");		
+				break;
+			case 3:
+				System.out.println("This is still under construction");
+				break;
+			case 4:
+				System.out.println("This is still under construction");
+				break;
+			case 5:
+				System.out.println("This is still under construction");
+				break;
+			case 6:
+				System.out.println("This is still under construction");
+				break;
+			case 7:
+				System.out.println("This is still under construction");
+				break;
+			case 8:
+				System.out.println("This is still under construction");
+				break;
+			case 9:
+				System.out.println("This is still under construction");
+				break;
+			case 10:
+				System.out.println("Thank you for using this");
+				break;
+			default: System.out.println("Invalid choice... Please enter any option between 1-10 only");
+				break;
+			
+			
+			}
+		} while (ch! = );
+
+	}
+
+}

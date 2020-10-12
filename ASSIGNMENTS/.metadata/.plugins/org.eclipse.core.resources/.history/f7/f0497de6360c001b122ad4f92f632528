@@ -1,0 +1,5 @@
+package com.app.login.dao;
+
+public interface LoginDAO {
+
+}

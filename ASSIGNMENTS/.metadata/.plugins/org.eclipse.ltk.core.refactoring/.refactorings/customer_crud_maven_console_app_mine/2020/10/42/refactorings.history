@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;MySqlConnection.java&apos; to &apos;login_web_app_demo/src/com.app.login.dao.dbutil&apos;&#x0D;&#x0A;- Original project: &apos;customer_crud_maven_console_app_mine&apos;&#x0D;&#x0A;- Destination element: &apos;login_web_app_demo/src/com.app.login.dao.dbutil&apos;&#x0D;&#x0A;- Original element: &apos;com.app.customer.dbutil.MySqlConnection.java&apos;" description="Copy compilation unit" destination="=login_web_app_demo/src&lt;com.app.login.dao.dbutil" element1="/src\/main\/java&lt;com.app.customer.dbutil{MySqlConnection.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1602472118081" units="1" version="1.0"/>
+</session>

@@ -1,0 +1,9 @@
+package com.app.dao;
+
+import com.app.model.Player;
+
+public class PlayerDAO {
+	
+	public int createPlayer(Player player);
+
+}

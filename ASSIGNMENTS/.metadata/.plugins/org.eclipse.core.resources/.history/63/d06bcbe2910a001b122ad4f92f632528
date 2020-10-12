@@ -1,0 +1,13 @@
+package com.app.customer.service;
+
+import com.app.customer.exception.BusinessException;
+import com.app.customer.model.Customer;
+
+public interface CustomerService {
+
+	public int addCustomer(Customer customer) throws BusinessException;
+	public int updateCustomer(int id, long contact) throws BusinessException;
+	public int deleteCustomer() throws BusinessException;
+	
+	
+}
